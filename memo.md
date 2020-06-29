@@ -45,6 +45,20 @@ Bicycle.create(color: "Black", price: 111)
 
 ```
 
+#### 実際に発行されたSQLを確認
+
+```
+Motorcycle Create (1.1ms)  INSERT INTO `vehicles` (`type`, `color`, `price`, `created_at`, `updated_at`) 
+    VALUES ('Motorcycle', 'blue', 3000.0, '2020-06-29 12:56:28', '2020-06-29 12:56:28')
+
+Car Create (0.6ms)  INSERT INTO `vehicles` (`type`, `color`, `price`, `created_at`, `updated_at`) 
+    VALUES ('Car', 'Red', 3000.0, '2020-06-29   12:56:40', '2020-06-29 12:56:40')
+
+Bicycle Create (0.7ms)  INSERT INTO `vehicles` (`type`, `color`, `price`, `created_at`, `updated_at`) 
+    VALUES ('Bicycle', 'Black', 111.0,  '2020-06-29 13:00:33', '2020-06-29 13:00:33')ß
+```
+
+
 #### 実際に登録したデータの確認
 
 * 目的通りtypeでわけることができた
